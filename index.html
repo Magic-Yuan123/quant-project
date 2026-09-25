@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>朱捷源｜多因子量化投资策略研究</title>
+<meta name="description" content="朱捷源的量化投资策略研究项目：多因子选股、LightGBM、回测与策略评价。">
+<style>
+:root{--bg:#0b1020;--card:#11182b;--text:#eef2ff;--muted:#aab4cf;--line:#26304a;--accent:#72a7ff;--accent2:#8ee3cf}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#0b1020 0,#0e1426 55%,#0b1020 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+.wrap{max-width:980px;margin:auto;padding:28px 22px 70px}.hero{padding:62px 0 38px;border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--accent2);font-weight:700;letter-spacing:.08em}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.15;margin:12px 0}.hero p{font-size:18px;color:var(--muted);max-width:760px}
+.tags{display:flex;gap:9px;flex-wrap:wrap;margin:22px 0}.tag{border:1px solid var(--line);background:#121b31;padding:6px 12px;border-radius:999px;color:#cbd5f1}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}.metric{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}.metric b{display:block;font-size:28px;color:var(--accent)}.metric span{color:var(--muted);font-size:14px}
+section{margin:38px 0}.card{background:rgba(17,24,43,.88);border:1px solid var(--line);border-radius:18px;padding:25px}
+h2{font-size:25px;margin:0 0 16px} h3{font-size:18px;margin:22px 0 7px}.muted{color:var(--muted)}
+ul{padding-left:22px} li{margin:7px 0}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.step{padding:15px;border:1px solid var(--line);border-radius:12px;background:#0f172a}.step strong{display:block;color:var(--accent2);margin-bottom:5px}
+a{color:#9cc2ff;text-decoration:none}a:hover{text-decoration:underline}.footer{margin-top:55px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media(max-width:720px){.grid,.flow{grid-template-columns:1fr 1fr}.hero{padding-top:35px}} @media(max-width:450px){.grid,.flow{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="eyebrow">QUANTITATIVE INVESTMENT RESEARCH · PROJECT PORTFOLIO</div>
+<h1>多因子量化投资策略研究</h1>
+<p><strong>朱捷源</strong>｜金融工程本科生。围绕多因子选股、因子降维、LightGBM建模与策略回测，完成从数据处理到策略评价的完整研究流程。</p>
+<div class="tags">
+<span class="tag">83个因子</span><span class="tag">LightGBM</span><span class="tag">多周期调仓</span><span class="tag">策略回测</span><span class="tag">Python</span>
+</div>
+</header>
+
+<div class="grid">
+<div class="metric"><b>1.2173</b><span>信息比率 IR</span></div>
+<div class="metric"><b>0.8165</b><span>策略夏普比率</span></div>
+<div class="metric"><b>83</b><span>缩减后因子数量</span></div>
+<div class="metric"><b>一等奖</b><span>课程项目成果</span></div>
+</div>
+
+<section>
+<h2>项目概览</h2>
+<div class="card">
+<p>本项目以多因子选股为核心，目标是构建信息比率尽可能高的量化策略。研究流程覆盖因子处理、因子合成、机器学习模型训练、调仓规则设计及策略回测，并对策略与基准ETF进行风险收益指标比较。</p>
+</div>
+</section>
+
+<section>
+<h2>我的工作</h2>
+<div class="card">
+<ul>
+<li><strong>因子研究：</strong>参与多因子数据处理与筛选，将因子体系缩减至83个有效因子。</li>
+<li><strong>模型构建：</strong>参与LightGBM模型训练，通过特征重要性与参数优化提升因子组合的预测与选股能力。</li>
+<li><strong>策略设计：</strong>参与多周期调仓框架设计，明确月度调参、周度/日度调仓等研究设定，并将交易成本纳入策略收益计算。</li>
+<li><strong>回测评价：</strong>完成策略回测及基准比较，重点关注夏普比率、信息比率等指标。</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>研究流程</h2>
+<div class="flow">
+<div class="step"><strong>01 · 因子</strong>数据处理与筛选</div>
+<div class="step"><strong>02 · 模型</strong>LightGBM训练与调参</div>
+<div class="step"><strong>03 · 策略</strong>多周期调仓与组合构建</div>
+<div class="step"><strong>04 · 回测</strong>收益、风险与基准评价</div>
+</div>
+</section>
+
+<section>
+<h2>核心结果</h2>
+<div class="card">
+<ul>
+<li>策略夏普比率：<strong>0.816514</strong></li>
+<li>基准ETF夏普比率：<strong>0.437107</strong></li>
+<li>信息比率：<strong>1.217262</strong></li>
+<li>课程项目成果：<strong>一等奖</strong>（原始成果页记录的评奖规则为以信息比率最高的策略获奖）</li>
+</ul>
+<p class="muted">以上指标均来自项目原始成果页面。回测结果属于历史样本结果，不代表未来投资表现。</p>
+</div>
+</section>
+
+<section>
+<h2>项目材料</h2>
+<div class="card">
+<p><a href="analysis.html">查看完整原始分析与成果展示 →</a></p>
+<p class="muted">该页面用于秋招项目展示；完整分析材料保留在仓库中，便于面试时进一步说明研究过程。</p>
+</div>
+</section>
+
+<section>
+<h2>面试可讨论的问题</h2>
+<div class="card">
+<ul>
+<li>为什么选择多因子框架，而不是单一因子？</li>
+<li>83个因子是如何筛选和处理的？</li>
+<li>LightGBM在项目中解决了什么问题？</li>
+<li>如何避免训练集与回测期之间的信息泄露？</li>
+<li>为什么同时关注Sharpe和IR？</li>
+<li>调仓频率和交易成本会怎样影响策略表现？</li>
+</ul>
+</div>
+</section>
+
+<div class="footer">
+© 2026 朱捷源 · Quantitative Investment Research Portfolio<br>
+项目页面根据原始成果材料整理；如需引用或公开发布，请确保项目署名与实际贡献一致。
+</div>
+</div>
+</body>
+</html>
